@@ -1,0 +1,48 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = Tanvir
+	email = tanvir.ahmed.tonoy@skiff.com
+	signingkey = 7A5B8B088478CE49
+[color]
+	ui = always
+[core]
+	editor = micro
+	pager = delta
+[commit]
+	gpgsign = true
+[init]
+	defaultBranch = dev
+[credential]
+	helper = store
+[alias]
+	unstage = reset HEAD --
+	last = log -1 HEAD
+	c = commit -m
+	s = status
+	branches = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
+	aa = add .
+	undo = reset HEAD~1 --mixed
+	reset = !git reset --hard
+	plog = log --color --graph --pretty=format:'%C(auto)%h %d %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	who = blame -w
+	squash = reset --soft HEAD^ && commit --amend
+        p = pull
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	side-by-side = true
+	line-numbers = true
+	navigate = true # use n and N to move between diff sections
+	light = false
+[merge]
+	conflictstyle = diff3
+[diff]
+	colorMoved = default
+[pull]
+	rebase = false
+[fetch]
+	prune = true
