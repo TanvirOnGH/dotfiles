@@ -14,8 +14,8 @@ gradient = 1
 gradient_count = 4
 gradient_color_1 = '#8DB8CD'
 gradient_color_2 = '#73B4D3'
-gradient_color_3 = '#CA8085'
-gradient_color_4 = '#D8787F'
+gradient_color_3 = '#C38F8F'
+gradient_color_4 = '#CA8085'
 
 [input]
 source = auto
