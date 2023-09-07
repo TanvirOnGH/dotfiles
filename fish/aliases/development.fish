@@ -1,0 +1,1 @@
+alias startwebserver "python -m http.server"
