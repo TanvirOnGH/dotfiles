@@ -60,3 +60,5 @@ end
 if status is-login
     # ...
 end
+
+thefuck --alias | source
