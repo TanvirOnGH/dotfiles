@@ -62,3 +62,4 @@ if status is-login
 end
 
 thefuck --alias | source
+cod init $fish_pid fish | source
