@@ -1,0 +1,1 @@
+set -gx CHEAT_USE_FZF TRUE
