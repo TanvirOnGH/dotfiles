@@ -1,23 +1,5 @@
 # set fish_greeting # Supress fish's intro message
 
-function fish_greeting
-    # https://fishshell.com/docs/current/cmds/fish_greeting.html
-    random choice "Hello!" "Hi!" "Good day" \
-        "Greetings Salutations" \
-        "Hi there" "Howdy!" \
-        "Pleased to make your acquaintance" "Hello, how's it going?" \
-        "Hey, what's up?" "Hey there, how are you?" \
-        "Hi, how's your day?" "Good to see you!" \
-        "Hello, my friend" "Hello, world!" \
-        "Hey, how's everything?" "What's new?" \
-        "How's the weather out there?" "Hey, beautiful soul!" \
-        "Hi, stranger!" "Long time no see!" \
-        "Hey, buddy!" "Hi, pal!" "Hey, partner!" \
-        "How's your day unfolding?" "Hello, dear friend!" \
-        "Hey, lovely!" "What's on your mind?" \
-        "Hi, fellow human!" "How's the world treating you?"
-end
-
 set -x FISH_CONFIG_DIR $HOME/.config/fish
 
 # Aliases
@@ -49,6 +31,11 @@ set fish_cursor_default underscore
 set fish_cursor_insert line
 set fish_cursor_replace_one underscore
 set fish_cursor_visual block
+
+function fish_greeting
+    source $FISH_CONFIG_DIR/greetings.fish
+    random choice $greetings
+end
 
 function fish_prompt
     echo (pwd) ":: "
