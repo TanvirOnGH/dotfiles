@@ -1,0 +1,17 @@
+editor: micro
+colorize: true
+# https://github.com/alecthomas/chroma/tree/master/styles
+style: colorful
+formatter: terminal256
+pager: bat
+
+cheatpaths:
+  - name: community
+    path: /home/user/.config/cheat/cheatsheets/community
+    tags: [ community ]
+    readonly: true
+
+  - name: personal
+    path: /home/user/.config/cheat/cheatsheets/personal
+    tags: [ personal ]
+    readonly: false
