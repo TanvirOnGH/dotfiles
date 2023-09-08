@@ -11,3 +11,5 @@ alias hgrep "history | grep"
 alias ports "netstat -tuln"
 alias netinfo "netstat -i"
 alias ifconfig "ifconfig -a"
+
+alias edit "code ."
