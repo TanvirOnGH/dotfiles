@@ -1,3 +1,3 @@
 alias stats "runiq --statistics"
-alias duplicates "runiq --invert"
-alias uniques "runiq"
+alias matches "runiq --invert"
+alias unmatches "runiq"
