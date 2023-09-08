@@ -1,0 +1,1 @@
+Switching between spacevim (https://spacevim.org), NvChad (https://github.com/NvChad/NvChad) and TeVim (https://github.com/sownteedev/TeVim).

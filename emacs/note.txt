@@ -1,0 +1,1 @@
+Switching between spacemacs (https://www.spacemacs.org), centaur-emacs (https://seagle0128.github.io/.emacs.d) and doom-emacs (https://github.com/doomemacs/doomemacs).
