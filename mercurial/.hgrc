@@ -1,0 +1,45 @@
+[ui]
+username = Tanvir <tanvir.ahmed.tonoy@skiff.com>
+verbose = True
+fallbackencoding = utf8
+merge = internal:merge
+
+[progress]
+delay = 1.3
+
+[bookmarks]
+track.current = True
+
+[git]
+intree = true
+
+[diff]
+git = True
+
+[color]
+status.modified = yellow bold
+status.added = green bold
+status.removed = red bold
+status.deleted = magenta bold
+status.unknown = bold
+status.ignored = bold
+
+[extensions]
+color = 
+extdiff = 
+fetch = 
+graphlog = 
+hggit =
+hgsubversion = !
+mercurial_keyring = 
+pager = 
+rebase = 
+versions = 
+bookmarks =
+hgext.convert =
+hgext.extdiff =
+hgext.mq =
+hgext.purge =
+record =
+transplant =
+shelve =
