@@ -33,8 +33,8 @@ set fish_cursor_replace_one underscore
 set fish_cursor_visual block
 
 function fish_greeting
-    source $FISH_CONFIG_DIR/greetings.fish
-    random choice $greetings
+    # source $FISH_CONFIG_DIR/greetings.fish
+    # random choice $greetings
 end
 
 function fish_prompt
