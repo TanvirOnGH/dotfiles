@@ -49,8 +49,14 @@ function metadata
 end
 
 function cd
-    builtin cd $argv
-    l
+    if contains -- $argv -- --help
+        builtin cd $argv
+    else if test -d $argv
+        builtin cd $argv
+        ls
+    else
+        builtin cd $argv
+    end
 end
 
 function tmpdir
