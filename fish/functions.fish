@@ -48,6 +48,11 @@ function metadata
     end
 end
 
+function cd
+    builtin cd $argv
+    l
+end
+
 function tmpdir
     if test -z "$argv"
         echo "Usage: tmpdir <directory_name>"
