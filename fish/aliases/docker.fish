@@ -1,7 +1,7 @@
 alias dockps "docker ps --format 'table{{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}'"
 alias dockls "docker container ls --all --format 'table{{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}'"
 alias dockpsa "docker ps -a"
-alias dockclean "docker system prune ; docker image prune"
+alias dockclean "docker system prune ; docker image prune ; docker system prune --volumes"
 alias dockexec "docker exec -it"
 alias docklogs "docker logs -f"
 alias docknetworks "docker network ls"
