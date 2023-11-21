@@ -64,4 +64,4 @@ end
 starship init fish | source
 
 # completions
-tdl completion fish | source
+# tdl completion fish | source
