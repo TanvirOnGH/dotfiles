@@ -1,0 +1,8 @@
+# argc-completions
+setenv ARGC_COMPLETIONS_ROOT "/home/user/workspace/argc-completions"
+setenv ARGC_COMPLETIONS_PATH "$ARGC_COMPLETIONS_ROOT/completions"
+setenv PATH "$ARGC_COMPLETIONS_ROOT/bin:$PATH"
+set autolist
+# To add a subset of completions only, change next line e.g. set argc_scripts=(cargo git)
+set argc_scripts=`ls -p -1 $ARGC_COMPLETIONS_ROOT/completions | sed -n 's/\.sh$//p'`
+eval `argc --argc-completions tcsh $argc_scripts`
