@@ -1,3 +1,8 @@
+<div align="center">
+  <img src="dotfiles.svg" alt="Dotfiles ICON">
+</div>
+
+
 ## About
 My Tailor-Fitted Dotfiles for various Programs.
 
