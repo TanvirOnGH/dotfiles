@@ -24,13 +24,27 @@
 	c = commit -m
 	s = status
 	branches = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
+	a = add
 	aa = add .
 	undo = reset HEAD~1 --mixed
 	reset = !git reset --hard
 	plog = log --color --graph --pretty=format:'%C(auto)%h %d %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	who = blame -w
 	squash = reset --soft HEAD^ && commit --amend
-        p = pull
+	pu = push
+	pl = pull
+	fp = push -f
+	rmori = remote remove origin
+	b = branch
+	bn = branch -m
+	ba = branch -a
+	bv = branch -av
+	ch = checkout
+	chb = checkout -b
+	ap = apply
+	apr = apply --reject --whitespace=fix
+	rr = reset @~
+	amend = commit --amend -m
 [interactive]
 	diffFilter = delta --color-only
 [delta]
