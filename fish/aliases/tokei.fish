@@ -1,0 +1,1 @@
+alias codecount "tokei"
