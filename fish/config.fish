@@ -66,8 +66,11 @@ if status is-interactive
     cod init $fish_pid fish | source
     mcfly init fish | source
     atuin init fish | source
+    zoxide init fish | source
 end
 
 if status is-login
     # ...
 end
+
+starship init fish | source
