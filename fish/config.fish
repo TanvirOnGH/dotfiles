@@ -67,4 +67,12 @@ starship init fish | source
 # tdl completion fish | source
 
 # ctrl+a
-# [ -f ~/.inshellisense/key-bindings.fish ] && source ~/.inshellisense/key-bindings.fish
+#[ -f ~/.inshellisense/key-bindings.fish ] && source ~/.inshellisense/key-bindings.fish
+
+# argc-completions
+set -gx ARGC_COMPLETIONS_ROOT "/home/user/workspace/argc-completions"
+set -gx ARGC_COMPLETIONS_PATH "$ARGC_COMPLETIONS_ROOT/completions"
+fish_add_path "$ARGC_COMPLETIONS_ROOT/bin"
+# To add a subset of completions only, change next line e.g. set argc_scripts cargo git
+set argc_scripts (ls -1 "$ARGC_COMPLETIONS_ROOT/completions" | sed -n 's/\.sh$//p')
+argc --argc-completions fish $argc_scripts | source
