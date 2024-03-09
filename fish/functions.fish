@@ -94,6 +94,14 @@ function linecount
     cat $argv | wc -l
 end
 
+function charcount
+    cat $argv | wc -c
+end
+
+function totalfiles
+    ls -l | grep "^-" | wc -l
+end
+
 function wordcount
     cat $argv | wc -w
 end
