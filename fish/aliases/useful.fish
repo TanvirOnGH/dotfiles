@@ -1,0 +1,13 @@
+alias df "df -h"
+alias du "du -ch"
+alias ps "ps aux"
+alias cls "clear"
+alias e "exit"
+
+alias untar "tar -xzvf"
+alias wget "wget -c"
+alias hist "history"
+alias hgrep "history | grep"
+alias ports "netstat -tuln"
+alias netinfo "netstat -i"
+alias ifconfig "ifconfig -a"
