@@ -65,3 +65,6 @@ starship init fish | source
 
 # completions
 # tdl completion fish | source
+
+# ctrl+a
+[ -f ~/.inshellisense/key-bindings.fish ] && source ~/.inshellisense/key-bindings.fish
