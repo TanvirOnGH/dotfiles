@@ -11,6 +11,6 @@ alias uptime "uptime -p"
 alias mounts "mount | column -t"
 alias users "who | cut -d' ' -f1 | sort | uniq"
 alias disks "lsblk -o HOTPLUG,NAME,SIZE,MODEL,TYPE | awk 'NR == 1 || /disk/'"
-alias partitions "lsblk -o HOTPLUG,NAME,LABEL,MOUNTPOINT,SIZE,MODEL,PARTLABEL,TYPE,UUID | grep -v loop | cut -c1-$COLUMNS"
+alias partitions "lsblk -o HOTPLUG,NAME,LABEL,MOUNTPOINT,SIZE,MODEL,PARTLABEL,TYPE,UUID"
 
 alias mkfile "touch"
