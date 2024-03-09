@@ -1,0 +1,1 @@
+alias gping "gping --clear -c red"
