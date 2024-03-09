@@ -36,11 +36,11 @@ function metadata
     set file_extension (string match -r '\.([^\.]+)$' $file --groups)
 
     switch $file_extension
-        case "mp4" "avi" "mkv" "mov" "flv" "wmv"
+        case mp4 avi mkv mov flv wmv
             ffprobe -v error -show_entries format=duration,size:stream=codec_name:stream=width:stream=height:stream=bit_rate -of json $file
-        case "mp3" "wav" "ogg" "flac" "m4a" "aac" "wma" "ape"
+        case mp3 wav ogg flac m4a aac wma ape
             mediainfo --Inform="General;%Duration%\nAudio;%CodecString%" $file
-        case "jpg" "jpeg" "png" "gif" "bmp" "tiff" "webp"
+        case jpg jpeg png gif bmp tiff webp
             exiftool $file
         case "*"
             echo "Unsupported file type: $file_extension"
@@ -107,11 +107,18 @@ function wordcount
 end
 
 function gitpullall
+    set log_file (pwd)/pull_log.txt
+
     for dir in *
-        if test -d $dir/.git
+        if test -d "$dir/.git"
             echo "Pulling in $dir..."
-            cd $dir
-            git pull
+            cd "$dir" || begin
+                echo "Failed to enter directory $dir" >>"$log_file"
+                continue
+            end
+            if not git pull
+                echo "Failed to pull in $dir" >>"$log_file"
+            end
             echo ""
             cd ..
         end
