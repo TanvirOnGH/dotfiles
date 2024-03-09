@@ -20,6 +20,34 @@ function backup
     end
 end
 
+function metadata
+    if test -z $argv
+        echo "Usage: metadata <file>"
+        return 1
+    end
+
+    set file $argv[1]
+
+    if test ! -f $file
+        echo "File not found: $file"
+        return 1
+    end
+
+    set file_extension (string match -r '\.([^\.]+)$' $file --groups)
+
+    switch $file_extension
+        case "mp4" "avi" "mkv" "mov" "flv" "wmv"
+            ffprobe -v error -show_entries format=duration,size:stream=codec_name:stream=width:stream=height:stream=bit_rate -of json $file
+        case "mp3" "wav" "ogg" "flac" "m4a" "aac" "wma" "ape"
+            mediainfo --Inform="General;%Duration%\nAudio;%CodecString%" $file
+        case "jpg" "jpeg" "png" "gif" "bmp" "tiff" "webp"
+            exiftool $file
+        case "*"
+            echo "Unsupported file type: $file_extension"
+            return 1
+    end
+end
+
 function tmpdir
     if test -z "$argv"
         echo "Usage: tmpdir <directory_name>"
