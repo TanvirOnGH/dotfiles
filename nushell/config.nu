@@ -762,3 +762,10 @@ $env.config = {
         }
     ]
 }
+
+# argc-completions
+$env.ARGC_COMPLETIONS_ROOT = '/home/user/workspace/argc-completions'
+$env.ARGC_COMPLETIONS_PATH = ($env.ARGC_COMPLETIONS_ROOT + '/completions')
+$env.PATH = ($env.PATH | prepend ($env.ARGC_COMPLETIONS_ROOT + '/bin'))
+argc --argc-completions nushell | save -f '/home/user/workspace/argc-completions/tmp/argc-completions.nu'
+source '/home/user/workspace/argc-completions/tmp/argc-completions.nu'
