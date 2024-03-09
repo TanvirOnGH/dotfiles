@@ -1,0 +1,10 @@
+# rules = [<const: All rules enabled>]
+wait_command = 4
+require_confirmation = True
+no_colors = False
+debug = False
+history_limit = None
+alter_history = True
+wait_slow_command = 15
+repeat = False
+instant_mode = False
