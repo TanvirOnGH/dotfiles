@@ -25,6 +25,11 @@ for file in $FISH_CONFIG_DIR/aliases/*.fish
     source $file
 end
 
+# Sets
+for file in $FISH_CONFIG_DIR/sets/*.fish
+    source $file
+end
+
 source $FISH_CONFIG_DIR/paths.fish
 source $FISH_CONFIG_DIR/functions.fish
 source $FISH_CONFIG_DIR/colors.fish
@@ -63,3 +68,4 @@ end
 
 thefuck --alias | source
 cod init $fish_pid fish | source
+mcfly init fish | source

@@ -1,0 +1,1 @@
+alias tldrs "tldr --list"

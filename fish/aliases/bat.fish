@@ -1,0 +1,5 @@
+alias Bat "bat --show-all"
+alias cat "bat --paging=never"
+alias dog "bat"
+alias batdiff "git diff --name-only --relative --diff-filter=d | xargs bat --diff"
+alias bathelp "bat --plain --language=help"
