@@ -60,4 +60,8 @@ if status is-login
     # ...
 end
 
+# Prompt
 starship init fish | source
+
+# completions
+tdl completion fish | source
