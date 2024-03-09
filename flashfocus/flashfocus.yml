@@ -1,0 +1,18 @@
+# If true, flashes are not faded out. This will improve performance but flashes won't be smooth.
+simple: false
+# Number of animation frames in a flash.
+ntimepoints: 75
+
+flash-on-focus: true
+flash-fullscreen: false
+flash-lone-windows: 'never'
+
+default-opacity: 1
+flash-opacity: 0.6
+time: 400
+
+rules:
+  - window-class: firefox
+    flash-on-focus: false
+  - app-id: ^(?!firefox)$
+    default-opacity: 1.0
