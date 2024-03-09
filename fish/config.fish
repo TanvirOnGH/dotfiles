@@ -60,12 +60,14 @@ end
 
 if status is-interactive
     # ...
+    # <https://zellij.dev/documentation/integration#fish>
+    # eval (zellij setup --generate-auto-start fish | string collect)
+    thefuck --alias | source
+    cod init $fish_pid fish | source
+    mcfly init fish | source
+    atuin init fish | source
 end
 
 if status is-login
     # ...
 end
-
-thefuck --alias | source
-cod init $fish_pid fish | source
-mcfly init fish | source
