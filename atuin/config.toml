@@ -1,0 +1,21 @@
+# https://atuin.sh/docs/config
+db_path = "~/.history.db"
+key_path = "~/.key"
+session_path = "~/.session"
+
+dialect = "us"
+auto_sync = true
+update_check = false
+sync_address = "https://api.atuin.sh"
+sync_frequency = "1h"
+
+search_mode = "fuzzy"
+filter_mode = "global"
+filter_mode_shell_up_key_binding = "global"
+style = "auto"
+inline_height = 0
+show_preview = true
+exit_mode = "return-original"
+word_jump_mode = "emacs"
+word_chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+scroll_context_lines = 1
