@@ -157,3 +157,24 @@ end
 function now
     date "+%A, %d-%m-%Y %I:%M:%S %p"
 end
+
+function nix-run
+    if test (count $argv) -eq 1
+        nix-shell -p $argv[1] --run $argv[1]
+        return
+    end
+
+    if test (count $argv) -gt 1
+        nix-shell -p $argv[1] --run "$argv[1] $argv[2..-1]"
+    end
+end
+
+function nix-garbage-clean
+    nix-collect-garbage -d
+    sudo nix-collect-garbage -d
+end
+
+function nix-update-all
+    sudo nix-channel --update
+    nix-channel --update
+end
