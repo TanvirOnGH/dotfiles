@@ -5,7 +5,7 @@ source /home/user/.config/bash/bash-wakatime/bash-wakatime.sh
 PS1="\[\033[1;32m\]\u@\h\[\033[0m\] \[\033[1;34m\]\w\[\033[0m\] :: "
 
 # argc-completions
-export ARGC_COMPLETIONS_ROOT="/home/user/workspace/argc-completions"
+export ARGC_COMPLETIONS_ROOT="/home/user/.config/fish/completions/argc-completions"
 export ARGC_COMPLETIONS_PATH="$ARGC_COMPLETIONS_ROOT/completions"
 export PATH="$ARGC_COMPLETIONS_ROOT/bin:$PATH"
 # To add a subset of completions only, change next line e.g. argc_scripts=( cargo git )
