@@ -1,0 +1,88 @@
+# Best VLC settings for listening to music or audio
+# Applies compression, an equalizer emphasizing low and high mids, volume normalization plus highest-quality sample rate conversion
+# Based on: <https://gist.github.com/ageis/c79ada44c8208f688298bb8437c1d69e>
+[compressor] # Dynamic range compressor
+# RMS/peak (float)
+compressor-rms-peak=0.100000
+# Attack time (float)
+compressor-attack=50.000000
+# Release time (float)
+compressor-release=250.000000
+# Threshold level (float)
+compressor-threshold=-20.000000
+# Ratio (float)
+compressor-ratio=20.000000
+# Knee radius (float)
+compressor-knee=1.000000
+# Makeup gain (float)
+compressor-makeup-gain=12.000000
+
+[equalizer] # Equalizer with 10 bands
+# Equalizer preset (string)
+equalizer-preset=custom
+# Bands gain (string)
+equalizer-bands=2 4 2 0.0000000 0.0000000 2 6 4 2 0.0000000
+# Two pass (boolean)
+equalizer-2pass=0
+# Use VLC frequency bands (boolean)
+equalizer-vlcfreqs=1
+# Global gain (float)
+equalizer-preamp=8.000000
+
+[normvol] # Volume normalizer
+
+# Number of audio buffers (integer)
+norm-buff-size=32
+# Maximal volume level (float)
+norm-max-level=2.000000
+
+[soxr] # soxr
+
+# Resampling quality (integer)
+soxr-resampler-quality=4
+
+[speex_resampler] # Speex resampler
+
+# Resampling quality (integer)
+speex-resampler-quality=10
+
+[gain] # Gain control filter
+
+# Gain multiplier (float)
+gain-value=1.000000
+
+[samplerate] # Secret Rabbit Code (libsamplerate) resampler
+
+# Sample rate converter type (integer)
+src-converter-type=0
+
+[core] # core program
+
+# Enable audio (boolean)
+audio=1
+# Audio gain (float)
+gain=1.000000
+# Audio output volume step (float)
+volume-step=10.000000
+# Remember the audio volume (boolean)
+volume-save=1
+# Force S/PDIF support (boolean)
+spdif=0
+# Force detection of Dolby Surround (integer)
+force-dolby-surround=0
+# Stereo audio output mode (integer)
+stereo-mode=1
+# Audio desynchronization compensation (integer)
+audio-desync=0
+# Replay gain mode (string)
+audio-replay-gain-mode=none
+# Replay preamp (float)
+audio-replay-gain-preamp=0.000000
+# Default replay gain (float)
+audio-replay-gain-default=-7.000000
+# Peak protection (boolean)
+audio-replay-gain-peak-protection=1
+# Enable time stretching audio (boolean)
+audio-time-stretch=0
+# Audio output module (string)
+aout=any
