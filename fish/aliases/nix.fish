@@ -6,3 +6,5 @@ alias nixos-rebuild-switch "sudo nixos-rebuild switch"
 alias nixos-rebuild-switch-upgrade "sudo nixos-rebuild switch --upgrade"
 alias nix-store-addfile "nix store add-file"
 alias nix-store-delete "nix store delete"
+
+alias nix-all-derivations "nix-store --query --requisites /run/current-system | cut -d- -f2- | sort | uniq"
