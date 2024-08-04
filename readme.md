@@ -13,4 +13,5 @@ My Tailor-Fitted Dotfiles for various Programs.
 
 - [Your unofficial guide to dotfiles on GitHub.](https://dotfiles.github.io)
 - [r/dotfiles](https://www.reddit.com/r/dotfiles/)
-- [r/unixporn wiki](https://www.reddit.com/r/unixporn/wiki/index/) - Ricing guide
+- [r/unixporn wiki](https://www.reddit.com/r/unixporn/wiki/index/)
+- [topics/dotfiles](https://github.com/topics/dotfiles)
