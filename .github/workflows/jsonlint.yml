@@ -9,28 +9,28 @@ on:
 jobs:
   lint-json:
     runs-on: ubuntu-latest
-    
+
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
-    
-    - name: Set up Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '16'
-        
-    - name: Install jsonlint
-      run: npm install -g jsonlint
-      
-    - name: Lint JSON files
-      run: |
-        json_files=$(git ls-files '*.json')
-        if [ -z "$json_files" ]; then
-          echo "No JSON files found."
-          exit 0
-        fi
-        
-        for file in $json_files; do
-          echo "Linting $file"
-          jsonlint "$file" -q
-        done
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+
+      - name: Install jsonlint
+        run: npm install -g jsonlint
+
+      - name: Lint JSON files
+        run: |
+          json_files=$(git ls-files '*.json')
+          if [ -z "$json_files" ]; then
+            echo "No JSON files found."
+            exit 0
+          fi
+
+          for file in $json_files; do
+            echo "Linting $file"
+            jsonlint "$file" -q
+          done
