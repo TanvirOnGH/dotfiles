@@ -1,4 +1,4 @@
-# https://atuin.sh/docs/config
+# https://atuin.sh/docs/config #
 db_path = "~/.history.db"
 key_path = "~/.key"
 session_path = "~/.session"
@@ -7,15 +7,48 @@ dialect = "us"
 auto_sync = true
 update_check = false
 sync_address = "https://api.atuin.sh"
-sync_frequency = "1h"
+sync_frequency = "5m"
+timezone = "local"
 
-search_mode = "fuzzy"
-filter_mode = "global"
+show_help = true
+prefers_reduced_motion = false
+show_tabs = true
+secrets_filter = true
+invert = false
+enter_accept = false
+
+search_mode = "fuzzy" # Possible values: prefix, fulltext, fuzzy, skim
+filter_mode = "global" # Possible values: global, host, session, directory
 filter_mode_shell_up_key_binding = "global"
-style = "auto"
-inline_height = 0
+style = "full" # Possible values: auto, full, compact
 show_preview = true
-exit_mode = "return-original"
-word_jump_mode = "emacs"
+exit_mode = "return-original" # Possible values: return-original, return-query
+word_jump_mode = "emacs" # Possible values: emacs, subl
 word_chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+search_mode_shell_up_key_binding = "fuzzy"
+
+inline_height = 0 # 0 to always go full screen
+max_preview_height = 4
 scroll_context_lines = 1
+
+keymap_mode = "emacs"
+## Possible values: "{blink,steady}-{block,underline,bar}"
+keymap_cursor = { emacs = "blink-underline", vim_insert = "blink-underline", vim_normal = "steady-underline" }
+
+[theme]
+name = ""
+
+[keys]
+scroll_exits = true
+
+[sync]
+# Sync v2
+# Will become the default across the board in the future
+records = true
+
+[dotfiles]
+# Will become the default across the board in the future
+enabled = true
+
+[preview]
+strategy = "auto" # Possible values: auto, static
