@@ -1,4 +1,3 @@
-# If PROMPT_COMMAND variable is set then just merge own pre_prompt_command with the following one.
 source /home/user/.config/bash/bash-wakatime/bash-wakatime.sh
 
 # Prompt
@@ -11,3 +10,9 @@ export PATH="$ARGC_COMPLETIONS_ROOT/bin:$PATH"
 # To add a subset of completions only, change next line e.g. argc_scripts=( cargo git )
 argc_scripts=( $(ls -p -1 "$ARGC_COMPLETIONS_ROOT/completions" | sed -n 's/\.sh$//p') )
 source <(argc --argc-completions bash "${argc_scripts[@]}")
+
+# atuin
+eval "$(atuin init bash)"
+# bind to the up key, which depends on terminal mode
+bind -x '"\e[A": __atuin_history --shell-up-key-binding'
+bind -x '"\eOA": __atuin_history --shell-up-key-binding'
