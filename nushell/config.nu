@@ -1,4 +1,16 @@
-alias fuck = /nix/store/i6awqnp25wivylc8vdd8l8j55wid4p2z-thefuck-3.32/bin/thefuck $"(history | last 1 | get command | get 0)"
+def --env yy [...args] {
+  let tmp = (mktemp -t "yazi-cwd.XXXXX")
+  yazi ...$args --cwd-file $tmp
+  let cwd = (open $tmp)
+  if $cwd != "" and $cwd != $env.PWD {
+    cd $cwd
+  }
+  rm -fp $tmp
+}
+
+alias fuck = /nix/store/b6in4yqiqabwajbrcd4sqszdg17djw8z-thefuck-3.32/bin/thefuck $"(history | last 1 | get command | get 0)"
+
+use /home/user/.cache/starship/init.nu
 
 source /home/user/.cache/atuin/init.nu
 
@@ -8,7 +20,7 @@ $env.config.hooks.pre_prompt = (
     $env.config.hooks.pre_prompt?
     | default []
     | append {||
-        let direnv = (/nix/store/iq73997k0rsvb1rgglx0s5z224qr86jk-direnv-2.34.0/bin/direnv export json
+        let direnv = (/nix/store/1mrvvx2ygfyfz8sn3gg5f3qidvd9s8j1-direnv-2.34.0/bin/direnv export json
         | from json
         | default {})
         if ($direnv | is-empty) {
@@ -31,3 +43,5 @@ $env.config.hooks.pre_prompt = (
         | load-env
     }
 )
+
+alias eza = eza '--icons' '--git'
