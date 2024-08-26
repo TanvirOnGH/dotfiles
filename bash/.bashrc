@@ -16,3 +16,6 @@ eval "$(atuin init bash)"
 # bind to the up key, which depends on terminal mode
 bind -x '"\e[A": __atuin_history --shell-up-key-binding'
 bind -x '"\eOA": __atuin_history --shell-up-key-binding'
+
+# direnv
+eval "$(direnv hook bash)"
