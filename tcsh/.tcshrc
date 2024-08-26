@@ -6,3 +6,5 @@ set autolist
 # To add a subset of completions only, change next line e.g. set argc_scripts=(cargo git)
 set argc_scripts=`ls -p -1 $ARGC_COMPLETIONS_ROOT/completions | sed -n 's/\.sh$//p'`
 eval `argc --argc-completions tcsh $argc_scripts`
+
+eval `direnv hook tcsh`
