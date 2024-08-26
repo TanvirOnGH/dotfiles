@@ -63,6 +63,9 @@ end
 # Prompt
 starship init fish | source
 
+# direnv
+direnv hook fish | source
+
 # completions
 # tdl completion fish | source
 
