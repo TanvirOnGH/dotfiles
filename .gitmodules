@@ -16,3 +16,6 @@
 [submodule "vim/NvChad"]
 	path = vim/NvChad
 	url = https://github.com/NvChad/NvChad
+[submodule "vim/LazyVim"]
+	path = vim/LazyVim
+	url = https://github.com/LazyVim/LazyVim
