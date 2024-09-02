@@ -7,3 +7,6 @@
 [submodule "bash/ble.sh"]
 	path = bash/ble.sh
 	url = https://github.com/akinomyoga/ble.sh
+[submodule "bash/bash-wakatime"]
+	path = bash/bash-wakatime
+	url = https://github.com/irondoge/bash-wakatime
