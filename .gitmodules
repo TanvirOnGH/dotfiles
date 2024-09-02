@@ -19,3 +19,6 @@
 [submodule "vim/LazyVim"]
 	path = vim/LazyVim
 	url = https://github.com/LazyVim/LazyVim
+[submodule "vim/TeVim"]
+	path = vim/TeVim
+	url = https://github.com/sownteedev/TeVim
