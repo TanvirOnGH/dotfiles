@@ -10,3 +10,6 @@
 [submodule "bash/bash-wakatime"]
 	path = bash/bash-wakatime
 	url = https://github.com/irondoge/bash-wakatime
+[submodule "vim/SpaceVim"]
+	path = vim/SpaceVim
+	url = https://github.com/SpaceVim/SpaceVim
