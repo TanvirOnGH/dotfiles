@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <actions>
-	<action>
-		<icon>utilities-terminal</icon>
-		<name>Open Terminal Here</name>
-		<submenu></submenu>
-		<unique-id>1687536599893349-1</unique-id>
-		<command>kitty %f</command>
-		<description>Example for a custom action</description>
-		<range></range>
-		<patterns>*</patterns>
-		<startup-notify/>
-		<directories/>
-	</action>
+<action>
+	<icon>utilities-terminal</icon>
+	<name>Terminal</name>
+	<submenu>Open</submenu>
+	<unique-id>1687536599893349-1</unique-id>
+	<command>kitty %f</command>
+	<description>Open Terminal in the current directory</description>
+	<range></range>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+<action>
+	<icon>dialog-xml-editor</icon>
+	<name>Editor</name>
+	<submenu>Open</submenu>
+	<unique-id>1725286061483264-1</unique-id>
+	<command>code %f</command>
+	<description>Open Editor in the current directory</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+	<other-files/>
+	<text-files/>
+</action>
 </actions>
