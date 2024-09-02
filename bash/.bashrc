@@ -11,6 +11,9 @@ export PATH="$ARGC_COMPLETIONS_ROOT/bin:$PATH"
 argc_scripts=( $(ls -p -1 "$ARGC_COMPLETIONS_ROOT/completions" | sed -n 's/\.sh$//p') )
 source <(argc --argc-completions bash "${argc_scripts[@]}")
 
+# <https://github.com/akinomyoga/ble.sh>
+source ~/.local/share/blesh/ble.sh
+
 # atuin
 eval "$(atuin init bash)"
 # bind to the up key, which depends on terminal mode
