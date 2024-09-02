@@ -58,3 +58,6 @@
 [submodule "vim/nvoid"]
 	path = vim/nvoid
 	url = https://github.com/nvoid-lua/nvoid
+[submodule "vim/IceNvim"]
+	path = vim/IceNvim
+	url = https://github.com/Shaobin-Jiang/IceNvim
