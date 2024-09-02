@@ -64,3 +64,6 @@
 [submodule "vim/doom-nvim"]
 	path = vim/doom-nvim
 	url = https://github.com/doom-neovim/doom-nvim
+[submodule "vim/Abstract"]
+	path = vim/Abstract
+	url = https://github.com/Abstract-IDE/Abstract
