@@ -49,3 +49,6 @@
 [submodule "vim/CosmicNvim"]
 	path = vim/CosmicNvim
 	url = https://github.com/CosmicNvim/CosmicNvim
+[submodule "vim/chaivim"]
+	path = vim/chaivim
+	url = https://github.com/comfysage/chaivim
