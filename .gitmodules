@@ -43,3 +43,6 @@
 [submodule "emacs/yay-evil-emacs"]
 	path = emacs/yay-evil-emacs
 	url = https://github.com/ianyepan/yay-evil-emacs
+[submodule "vim/CyberNvim"]
+	path = vim/CyberNvim
+	url = https://github.com/pgosar/CyberNvim
