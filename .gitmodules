@@ -37,3 +37,6 @@
 [submodule "emacs/centauremacs"]
 	path = emacs/centauremacs
 	url = https://github.com/seagle0128/.emacs.d
+[submodule "emacs/prelude"]
+	path = emacs/prelude
+	url = https://github.com/bbatsov/prelude
