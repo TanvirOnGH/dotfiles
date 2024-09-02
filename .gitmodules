@@ -61,3 +61,6 @@
 [submodule "vim/IceNvim"]
 	path = vim/IceNvim
 	url = https://github.com/Shaobin-Jiang/IceNvim
+[submodule "vim/doom-nvim"]
+	path = vim/doom-nvim
+	url = https://github.com/doom-neovim/doom-nvim
