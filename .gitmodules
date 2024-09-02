@@ -25,3 +25,6 @@
 [submodule "vim/LunarVim"]
 	path = vim/LunarVim
 	url = https://github.com/LunarVim/LunarVim
+[submodule "vim/AstroNvim"]
+	path = vim/AstroNvim
+	url = https://github.com/AstroNvim/AstroNvim
