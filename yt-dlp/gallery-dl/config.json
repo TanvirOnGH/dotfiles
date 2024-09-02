@@ -1,0 +1,14 @@
+{
+  "downloader": {
+    "enabled": true,
+    "progress": 0
+  },
+  "extractor": {
+    "base-directory": "~/downloads/gallery-dl",
+    "skip": true,
+    "ytdl": {
+      "enabled": true,
+      "format": "bestvideo[height<=1080]+bestaudio/best[height<=1080]"
+    }
+  }
+}
