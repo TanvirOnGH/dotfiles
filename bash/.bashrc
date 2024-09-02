@@ -11,14 +11,10 @@ export PATH="$ARGC_COMPLETIONS_ROOT/bin:$PATH"
 argc_scripts=( $(ls -p -1 "$ARGC_COMPLETIONS_ROOT/completions" | sed -n 's/\.sh$//p') )
 source <(argc --argc-completions bash "${argc_scripts[@]}")
 
+# Necessary for Atuin to work
 # <https://github.com/akinomyoga/ble.sh>
+# Atuin works best in bash when using ble.sh.
 source ~/.local/share/blesh/ble.sh
-
-# atuin
-eval "$(atuin init bash)"
-# bind to the up key, which depends on terminal mode
-bind -x '"\e[A": __atuin_history --shell-up-key-binding'
-bind -x '"\eOA": __atuin_history --shell-up-key-binding'
 
 # direnv
 eval "$(direnv hook bash)"
@@ -32,3 +28,9 @@ function yy() {
 	fi
 	rm -f -- "$tmp"
 }
+
+# atuin
+eval "$(atuin init bash)"
+# bind to the up key, which depends on terminal mode
+bind -x '"\e[A": __atuin_history --shell-up-key-binding'
+bind -x '"\eOA": __atuin_history --shell-up-key-binding'
