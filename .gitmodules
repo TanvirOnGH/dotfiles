@@ -34,3 +34,6 @@
 [submodule "emacs/spacemacs"]
 	path = emacs/spacemacs
 	url = https://github.com/syl20bnr/spacemacs
+[submodule "emacs/centauremacs"]
+	path = emacs/centauremacs
+	url = https://github.com/seagle0128/.emacs.d
