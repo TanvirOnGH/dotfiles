@@ -28,3 +28,6 @@
 [submodule "vim/AstroNvim"]
 	path = vim/AstroNvim
 	url = https://github.com/AstroNvim/AstroNvim
+[submodule "emacs/doomemacs"]
+	path = emacs/doomemacs
+	url = https://github.com/doomemacs/doomemacs
