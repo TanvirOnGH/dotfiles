@@ -46,3 +46,6 @@
 [submodule "vim/CyberNvim"]
 	path = vim/CyberNvim
 	url = https://github.com/pgosar/CyberNvim
+[submodule "vim/CosmicNvim"]
+	path = vim/CosmicNvim
+	url = https://github.com/CosmicNvim/CosmicNvim
