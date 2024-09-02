@@ -22,3 +22,6 @@
 [submodule "vim/TeVim"]
 	path = vim/TeVim
 	url = https://github.com/sownteedev/TeVim
+[submodule "vim/LunarVim"]
+	path = vim/LunarVim
+	url = https://github.com/LunarVim/LunarVim
