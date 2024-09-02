@@ -67,3 +67,6 @@
 [submodule "vim/Abstract"]
 	path = vim/Abstract
 	url = https://github.com/Abstract-IDE/Abstract
+[submodule "vim/nyoom.nvim"]
+	path = vim/nyoom.nvim
+	url = https://github.com/nyoom-engineering/nyoom.nvim
