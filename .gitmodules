@@ -52,3 +52,6 @@
 [submodule "vim/chaivim"]
 	path = vim/chaivim
 	url = https://github.com/comfysage/chaivim
+[submodule "vim/nv-ide"]
+	path = vim/nv-ide
+	url = https://github.com/crivotz/nv-ide
