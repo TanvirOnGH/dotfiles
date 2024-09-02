@@ -40,3 +40,6 @@
 [submodule "emacs/prelude"]
 	path = emacs/prelude
 	url = https://github.com/bbatsov/prelude
+[submodule "emacs/yay-evil-emacs"]
+	path = emacs/yay-evil-emacs
+	url = https://github.com/ianyepan/yay-evil-emacs
