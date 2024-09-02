@@ -1,3 +1,9 @@
-Switching between spacevim (https://spacevim.org), NvChad (https://github.com/NvChad/NvChad), LazyVim (https://www.lazyvim.org) and TeVim (https://github.com/sownteedev/TeVim).
+Switching between:
+- SpaceVim (https://spacevim.org)
+- NvChad (https://github.com/NvChad/NvChad)
+- LazyVim (https://www.lazyvim.org)
+- TeVim (https://github.com/sownteedev/TeVim)
+- LunarVim (https://github.com/LunarVim/LunarVim)
+- AstroNvim (https://github.com/AstroNvim/AstroNvim)
 
-- Vim, Neovim, Neovide (Mostly).
+Using Vim, Neovim and Neovide (Mostly)
