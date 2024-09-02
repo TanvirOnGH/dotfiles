@@ -13,3 +13,6 @@
 [submodule "vim/SpaceVim"]
 	path = vim/SpaceVim
 	url = https://github.com/SpaceVim/SpaceVim
+[submodule "vim/NvChad"]
+	path = vim/NvChad
+	url = https://github.com/NvChad/NvChad
