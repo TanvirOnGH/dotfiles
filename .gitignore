@@ -1,5 +1,46 @@
 megalinter-reports/
 
+# Created by https://www.toptal.com/developers/gitignore/api/zsh
+# Edit at https://www.toptal.com/developers/gitignore?templates=zsh
+
+### Zsh ###
+# Zsh compiled script + zrecompile backup
+zsh/*.zwc
+zsh/*.zwc.old
+
+# Zsh completion-optimization dumpfile
+zsh/*zcompdump*
+
+# Zsh history
+zsh/.zsh_history
+
+# Zsh sessions
+zsh/.zsh_sessions
+
+# Zsh zcalc history
+zsh/.zcalc_history
+
+# A popular plugin manager's files
+zsh/._zinit
+zsh/.zinit_lstupd
+
+# zdharma/zshelldoc tool's files
+zsh/zsdoc/data
+
+# robbyrussell/oh-my-zsh/plugins/per-directory-history plugin's files
+# (when set-up to store the history in the local directory)
+zsh/.directory_history
+
+# MichaelAquilina/zsh-autoswitch-virtualenv plugin's files
+# (for Zsh plugins using Python)
+zsh/.venv
+
+# Zunit tests' output for zsh directory
+/zsh/_output/*
+!/zsh/_output/.gitkeep
+
+# End of https://www.toptal.com/developers/gitignore/api/zsh
+
 # Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode
 
