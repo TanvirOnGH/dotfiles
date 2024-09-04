@@ -1,5 +1,15 @@
 megalinter-reports/
 
+# Created by https://www.toptal.com/developers/gitignore/api/fish
+# Edit at https://www.toptal.com/developers/gitignore?templates=fish
+
+### Fish ###
+fish/fishd.*
+fish/fish_history
+fish/config.local.fish
+
+# End of https://www.toptal.com/developers/gitignore/api/fish
+
 # Created by https://www.toptal.com/developers/gitignore/api/zsh
 # Edit at https://www.toptal.com/developers/gitignore?templates=zsh
 
