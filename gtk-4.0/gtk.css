@@ -3,3 +3,9 @@
  * It does however respect user CSS, so import the theme from here.
 **/
 @import url("file:///nix/store/hhqfgdmpgm8y5bakw7sism7jnx13g2nf-colloid-gtk-theme-2024-06-18/share/themes/Colloid-Dark/gtk-4.0/gtk.css");
+menu,
+.csd .menu,
+.csd .dropdown,
+.csd .context-menu {
+  border-radius: 0px;
+}

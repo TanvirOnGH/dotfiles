@@ -1,0 +1,6 @@
+menu,
+.csd .menu,
+.csd .dropdown,
+.csd .context-menu {
+  border-radius: 0px;
+}
