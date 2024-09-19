@@ -9,7 +9,6 @@
 --output ~/downloads/yt-dlp/%(title)s.%(ext)s
 --sub-langs en.\*
 --windows-filenames
---write-auto-sub
 --write-sub
 --no-quiet
 --continue
