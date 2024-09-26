@@ -135,6 +135,18 @@ function gitpullall
     end
 end
 
+function gcomms
+    if test -z "$argv"
+        git log --pretty=format:"%h %an %ad %s" --date=short
+    else
+        git log --author="$argv[1]" --pretty=oneline | nl
+    end
+end
+
+function git-invert-path
+    git filter-repo --path $argv[1] --invert-paths
+end
+
 function extract
     switch $argv[1]
         case '*.tar.gz'
